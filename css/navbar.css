@@ -1,216 +1,226 @@
 .navbar a {
-  color: #efefef;
-  text-decoration: none;
+    color: #efefef;
+    text-decoration: none;
 }
 
-.navbar-top-fixed{
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 9999;
-  width: 100%;
-  height: 75px;
-  background-color: #292929;
+.navbar-top-fixed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    width: 100%;
+    height: 75px;
+    background-color: #292929;
 }
 
 .logo-container {
-  float: left;
-  padding: 5px;
-  margin-top: 15px;
+    float: left;
+    padding: 5px;
+    margin-top: 15px;
 }
 
 .logo-text {
-  font-size: 2em;
-  letter-spacing: 1px;
-  color: #efefef;
+    font-size: 2em;
+    letter-spacing: 1px;
+    color: #efefef;
 }
 
 .navbar-text-container {
-  float: right;
-  padding: 15px;
-  margin-top: 15px;
-  margin-right: -45px;
+    float: right;
+    padding: 15px;
+    margin-top: 15px;
+    margin-right: -45px;
 }
 
-.navbar-text-container ul {
-  list-style-type: none;
-  display: inline;
-}
+    .navbar-text-container ul {
+        list-style-type: none;
+        display: inline;
+    }
 
-.navbar-text-container li {
-  float: left;
-}
+    .navbar-text-container li {
+        float: left;
+    }
 
-.navbar-text-container li a {
-  text-align: center;
-  padding: 15px 16px;
-}
+        .navbar-text-container li a {
+            text-align: center;
+            padding: 15px 16px;
+        }
 
-.navbar-text-container a:hover {
-  color: #c8c7c7;
-  background-color: white;
-  text-decoration: none;
-}
+    .navbar-text-container a:hover {
+        color: #c8c7c7;
+        background-color: white;
+        text-decoration: none;
+    }
 
 .navbar-text {
-  letter-spacing: 2px;
+    letter-spacing: 2px;
 }
 
 .navbar-text-container .menu-btn {
-  display: none;
+    display: none;
+}
+
+.main-img {
+    position: absolute;
+    max-height: 500px;
 }
 
 @media screen and (min-width: 1000px) {
-  .navbar-container {
-    margin: auto;
-    position: absolute;
-    left: 10px;
-    right: 0px;
-	width: 1000px;
+    .navbar-container {
+        margin: auto;
+        position: absolute;
+        left: 10px;
+        right: 0px;
+        width: 1000px;
+    }
 
-  }
-  .logo-container {
-    float: left;
-    padding: 5px;
-	margin-left: 10px;
-  }
-  .main-img{
-	margin: auto;
-    position: absolute;
-    left: 0%;
-	top: 75px;
-    right: 0px;
-	width: 1000px;
-}
+    .logo-container {
+        float: left;
+        padding: 5px;
+        margin-left: 10px;
+    }
+
+    .main-img {
+        margin: auto;
+        left: 0%;
+        top: 75px;
+        right: 0px;
+        width: 1000px;
+    }
 }
 
 @media screen and (max-width: 1000px) and (min-width: 600px) {
-  .navbar-container {
-    position: absolute;
-    width: 100%;
-  }
-  .logo-container {
-    float: left;
-    padding: 5px;
-	margin-left: 15px;
-  }
-    .main-img{
-	margin-left: -10px;
-	top: 75px;
-    position: absolute;
-	width: 100%;
-	}
+    .navbar-container {
+        position: absolute;
+        width: 100%;
+    }
+
+    .logo-container {
+        float: left;
+        padding: 5px;
+        margin-left: 15px;
+    }
+
+    .main-img {
+        margin-left: -10px;
+        top: 75px;
+        width: 100%;
+    }
 }
 
 @media screen and (max-width: 600px) {
-  .navbar-top-fixed{
-	  height: 50px;
-  }
-  
-  .navbar{
-    width: 100%;
-  }
-  
-  .navbar-container {
-    position: absolute;
-    left: 0%;
-    right: 0%;
-  }
-  .logo-container {
-	margin-top: 0px;
-    float: left;
-    padding: 5px;
-	margin-left: 10px;
-  }
-  .navbar-text-container{
-	margin-top: 0px;  
-  }
-  .navbar-text-container ul {
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #efefef;
-  }
-  
-  /*Make list vertical again */
-  .navbar-text-container li a {
-    display: block;
-	width: 110px;
-	text-align: left;
-    text-decoration: none;
-	color: #1e1e1e;
-  }
-   .navbar-text-container a:hover {
-    color: #1e1e1e;
-    background-color: #c2c2c2;
-  }
-  
-  .navbar-text {
-    margin-left: 0em;
-    color: #1e1e1e;
-  }
+    .navbar-top-fixed {
+        height: 50px;
+    }
 
-  /* Menu position when closing */
-  .navbar-text-container .menu {
-    position: absolute;
-    clear: both;
-    max-height: 0;
-    margin-top: 35px;
-    right: 0%;
-	width: 110px;
-    transition: max-height .2s ease-out;
-  }
+    .navbar {
+        width: 100%;
+    }
 
-  .navbar-text-container .menu-icon {
-    cursor: pointer;
-    display: inline-block;
-    float: right;
-    right: 40px;
-    /* hamburger left / right position */
-    padding: 8px;
-    position: relative;
-    user-select: none;
-  }
-  /* Define color and size of hamburger */
-  .navbar-text-container .menu-icon .navicon {
-    background: white;
-    display: block;
-    height: 3px;
-    position: relative;
-    transition: background .2s ease-out;
-    width: 25px;
-  }
-  /* Middle bar color */
-  .navbar-text-container .menu-icon .navicon:before,
-  .navbar-text-container .menu-icon .navicon:after {
-    background: white;
-    content: '';
-    display: block;
-    height: 100%;
-    position: absolute;
-    transition: all .2s ease-out;
-    width: 100%;
-  }
-  /* Define navbar symbol spacing */
-  .navbar-text-container .menu-icon .navicon:before {
-    top: 7px;
-  }
-  .navbar-text-container .menu-icon .navicon:after {
-    top: -7px;
-  }
-  /* Menu height and position upon opening */
-  .navbar-text-container .menu-btn:checked ~ .menu {
-    position: absolute;
-    margin-top: 35px;
-    right: 0%;
-    max-height: 240px;
-	width: 110px;
-  }
-  
-  .main-img{
-	margin-left: -10px;
-	margin-top: 40px;
-    position: absolute;
-	width: 100%;
-	}
+    .navbar-container {
+        position: absolute;
+        left: 0%;
+        right: 0%;
+    }
+
+    .logo-container {
+        margin-top: 0px;
+        float: left;
+        padding: 5px;
+        margin-left: 10px;
+    }
+
+    .navbar-text-container {
+        margin-top: 0px;
+    }
+
+        .navbar-text-container ul {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #efefef;
+        }
+
+        /*Make list vertical again */
+        .navbar-text-container li a {
+            display: block;
+            width: 110px;
+            text-align: left;
+            text-decoration: none;
+            color: #1e1e1e;
+        }
+
+        .navbar-text-container a:hover {
+            color: #1e1e1e;
+            background-color: #c2c2c2;
+        }
+
+    .navbar-text {
+        margin-left: 0em;
+        color: #1e1e1e;
+    }
+
+    /* Menu position when closing */
+    .navbar-text-container .menu {
+        position: absolute;
+        clear: both;
+        max-height: 0;
+        margin-top: 35px;
+        right: 0%;
+        width: 110px;
+        transition: max-height .2s ease-out;
+    }
+
+    .navbar-text-container .menu-icon {
+        cursor: pointer;
+        display: inline-block;
+        float: right;
+        right: 40px;
+        /* hamburger left / right position */
+        padding: 8px;
+        position: relative;
+        user-select: none;
+    }
+        /* Define color and size of hamburger */
+        .navbar-text-container .menu-icon .navicon {
+            background: white;
+            display: block;
+            height: 3px;
+            position: relative;
+            transition: background .2s ease-out;
+            width: 25px;
+        }
+            /* Middle bar color */
+            .navbar-text-container .menu-icon .navicon:before,
+            .navbar-text-container .menu-icon .navicon:after {
+                background: white;
+                content: '';
+                display: block;
+                height: 100%;
+                position: absolute;
+                transition: all .2s ease-out;
+                width: 100%;
+            }
+            /* Define navbar symbol spacing */
+            .navbar-text-container .menu-icon .navicon:before {
+                top: 7px;
+            }
+
+            .navbar-text-container .menu-icon .navicon:after {
+                top: -7px;
+            }
+    /* Menu height and position upon opening */
+    .navbar-text-container .menu-btn:checked ~ .menu {
+        position: absolute;
+        margin-top: 35px;
+        right: 0%;
+        max-height: 240px;
+        width: 110px;
+    }
+
+    .main-img {
+        margin-left: -10px;
+        margin-top: 40px;
+        width: 100%;
+    }
 }
