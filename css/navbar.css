@@ -133,29 +133,26 @@
     padding: 0;
     overflow: hidden;
     background-color: #efefef;
-    display: block;
   }
+  
   /*Make list vertical again */
-  .navbar-text-container li {
-    clear: left;
-  }
   .navbar-text-container li a {
     display: block;
+	width: 110px;
+	text-align: left;
     text-decoration: none;
+	color: #1e1e1e;
   }
-  .navbar-text {
-    margin-left: 0em;
-    color: #1e1e1e;
-    width: 120px;
-  }
-  .navbar-text-container a {
-    color: #1e1e1e;
-    text-decoration: none;
-  }
-  .navbar-text-container a:hover {
+   .navbar-text-container a:hover {
     color: #1e1e1e;
     background-color: #c2c2c2;
   }
+  
+  .navbar-text {
+    margin-left: 0em;
+    color: #1e1e1e;
+  }
+
   /* Menu position when closing */
   .navbar-text-container .menu {
     position: absolute;
@@ -163,8 +160,10 @@
     max-height: 0;
     margin-top: 35px;
     right: 0%;
+	width: 110px;
     transition: max-height .2s ease-out;
   }
+
   .navbar-text-container .menu-icon {
     cursor: pointer;
     display: inline-block;
@@ -208,6 +207,7 @@
     margin-top: 35px;
     right: 0%;
     max-height: 240px;
+	width: 110px;
   }
   
   .main-img{
