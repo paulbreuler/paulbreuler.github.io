@@ -28,7 +28,6 @@
 .navbar-text-container {
     float: right;
     padding: 15px;
-    background-color: orange;
 }
 
     .navbar-text-container ul {
@@ -172,7 +171,7 @@
         cursor: pointer;
         display: inline-block;
         float: right;
-        right: 40px;
+        right: 0px;
         /* hamburger left / right position */
         padding: 8px;
         position: relative;
