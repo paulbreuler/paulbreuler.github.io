@@ -104,7 +104,7 @@
     }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 480px), (max-device-width: 480px) {
     .navbar-top-fixed {
         height: 50px;
     }
