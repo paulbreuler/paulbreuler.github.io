@@ -28,13 +28,11 @@
 .navbar-text-container {
     float: right;
     padding: 15px;
-    margin-top: 15px;
-    margin-right: -45px;
+    background-color: orange;
 }
 
     .navbar-text-container ul {
         list-style-type: none;
-        display: inline;
     }
 
     .navbar-text-container li {
@@ -42,7 +40,6 @@
     }
 
         .navbar-text-container li a {
-            text-align: center;
             padding: 15px 16px;
         }
 
@@ -57,7 +54,7 @@
 }
 
 .navbar-text-container .menu-btn {
-    display: none;
+      display: none;
 }
 
 .main-img {
@@ -84,12 +81,12 @@
         margin: auto;
         left: 0%;
         top: 75px;
-        right: 0px;
+        right: 0%;
         width: 1000px;
     }
 }
 
-@media screen and (max-width: 1000px) and (min-width: 600px) {
+@media screen and (max-width: 1000px) and (min-width: 480px) {
     .navbar-container {
         position: absolute;
         width: 100%;
@@ -102,13 +99,13 @@
     }
 
     .main-img {
-        margin-left: -10px;
+        margin-left: -8px;
         top: 75px;
         width: 100%;
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 480px) {
     .navbar-top-fixed {
         height: 50px;
     }
@@ -219,7 +216,7 @@
     }
 
     .main-img {
-        margin-left: -10px;
+        margin-left: -8px;
         margin-top: 40px;
         width: 100%;
     }
