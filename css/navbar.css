@@ -67,6 +67,7 @@
 }
 
 .main-img {
+    display: none;
     position: relative;
     margin: auto;
     max-height: 500px;
