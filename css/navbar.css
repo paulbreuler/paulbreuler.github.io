@@ -69,7 +69,6 @@
 .main-img {
     position: relative;
     margin: auto;
-    left: 0%;
     max-height: 500px;
     width: 1000px;
 }
@@ -95,8 +94,6 @@
 
     .main-img {
         margin: auto;
-        left: 0%;
-        right: 0%;
         width: 1000px;
     }
 }
@@ -118,7 +115,6 @@
     }
 
     .main-img {
-        position: absolute;
         width: 100%;
     }
 }
