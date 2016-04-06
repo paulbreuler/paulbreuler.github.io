@@ -1,0 +1,32 @@
+body{
+    background-color: #333333;
+}
+
+.navbar{
+    background-color: #292929;
+    height: 75px;
+}
+
+a.navbar-brand{
+    margin-top: 5px;
+}
+
+.navbar-brand-main{
+    color: yellow;
+}
+
+.navbar-brand-sub{
+    font-size: .75em;
+}
+
+.navbar-nav a{
+    top: 15px;
+}
+
+.slides{
+    margin:auto;
+}
+
+.content {
+    background-color: white;
+}
