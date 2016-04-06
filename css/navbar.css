@@ -1,10 +1,20 @@
+.container {
+    position:absolute;
+    margin: 0;
+    padding: 0;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+
+}
+
 .navbar a {
     color: #efefef;
     text-decoration: none;
 }
 
 .navbar-top-fixed {
-    position: absolute;
+    position: relative;
     top: 0;
     left: 0;
     z-index: 9999;
@@ -53,15 +63,22 @@
 }
 
 .navbar-text-container .menu-btn {
-      display: none;
+    display: none;
 }
 
 .main-img {
-    position: absolute;
+    position: relative;
+    margin: auto;
+    left: 0%;
     max-height: 500px;
+    width: 1000px;
 }
 
 @media screen and (min-width: 1000px) {
+    body {
+        background-color: Blue;
+    }
+
     .navbar-container {
         margin: auto;
         position: absolute;
@@ -79,13 +96,16 @@
     .main-img {
         margin: auto;
         left: 0%;
-        top: 75px;
         right: 0%;
         width: 1000px;
     }
 }
 
 @media screen and (max-width: 1000px) and (min-width: 480px) {
+    body {
+        background-color: red;
+    }
+
     .navbar-container {
         position: absolute;
         width: 100%;
@@ -98,13 +118,13 @@
     }
 
     .main-img {
-        margin-left: -8px;
-        top: 75px;
         width: 100%;
     }
 }
 
 @media screen and (max-width: 480px), (max-device-width: 480px) {
+
+
     .navbar-top-fixed {
         height: 50px;
     }
@@ -215,8 +235,8 @@
     }
 
     .main-img {
-        margin-left: -8px;
-        margin-top: 40px;
         width: 100%;
+        left: 0%;
+        right: 0%;
     }
 }
