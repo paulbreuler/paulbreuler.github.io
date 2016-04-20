@@ -22,8 +22,8 @@ a.navbar-brand{
     
 }
 
-item {
-    max-height: 50px !important;
+.slides{
+    margin:auto;
 }
 
 .content {
