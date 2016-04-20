@@ -4,11 +4,10 @@ body{
 
 .navbar{
     background-color: #292929;
-    height: 75px;
 }
 
 a.navbar-brand{
-    margin-top: 5px;
+   margin-top: -10px; 
 }
 
 .navbar-brand-main{
@@ -20,13 +19,14 @@ a.navbar-brand{
 }
 
 .navbar-nav a{
-    top: 15px;
+    
 }
 
-.slides{
-    margin:auto;
+item {
+    max-height: 50px !important;
 }
 
 .content {
     background-color: white;
 }
+
