@@ -1,32 +1,52 @@
-body{
+body {
     background-color: #333333;
 }
 
-.navbar{
+.navbar {
     background-color: #292929;
 }
 
-a.navbar-brand{
-   margin-top: -10px; 
+a.navbar-brand {
+    margin-top: -10px;
 }
 
-.navbar-brand-main{
+.navbar-brand-main {
     color: yellow;
 }
 
-.navbar-brand-sub{
+.navbar-brand-sub {
     font-size: .75em;
 }
 
-.navbar-nav a{
-    
+.navbar-nav a {
 }
 
-.slides{
-    margin:auto;
+.slides {
+    margin: auto;
 }
 
 .content {
     background-color: white;
 }
 
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+}
+
+    .video-container iframe,
+    .video-container object,
+    .video-container embed {
+        position: absolute;
+        top: 0;
+        left: 8.75%;
+        width: 82.5%;
+        height: 100%;
+    }
+
+.video-margin {
+    height: 50px;
+}
