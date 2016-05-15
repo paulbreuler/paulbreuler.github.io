@@ -51,6 +51,7 @@ a.navbar-brand {
     height: 50px;
 }
 
+.btn-more {
     position: relative;
     z-index: 999;
     margin-bottom: 10px;
