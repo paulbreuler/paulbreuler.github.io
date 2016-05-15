@@ -1,0 +1,49 @@
+﻿footer {
+    margin-top: 10px;
+}
+
+#main-img-left, #main-img-right {
+    width: 60%;
+}
+
+#main-img-right {
+    margin-bottom: 10px;
+}
+
+#BMXControllerSchema table {
+    width: 30%;
+}
+
+#BMXControllerSchema table, th, td {
+    border: 1px solid black;
+}
+
+td {
+    font-size: 125%;
+    padding: 15px;
+}
+
+.img-mult {
+    float: left;
+}
+
+label {
+    width: 49%;
+    padding: 0;
+}
+
+#btnControl-img1,
+#btnControl-img2,
+#btnControl-img3,
+#btnControl-img4,
+#btnControl-img5 {
+    display: none;
+}
+
+    #btnControl-img1:checked + label,
+    #btnControl-img2:checked + label,
+    #btnControl-img3:checked + label,
+    #btnControl-img4:checked + label,
+    #btnControl-img5:checked + label {
+        width: 100%;
+    }

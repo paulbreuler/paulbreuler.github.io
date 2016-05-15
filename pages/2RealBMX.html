@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 
     <link href="../css/content.css" rel="stylesheet">
+    <link href="../css/bmxPage.css" rel="stylesheet">
 
 </head>
 <body>
@@ -33,20 +34,119 @@
         </div><!-- /.container -->
     </nav><!-- /.navbar -->
 
-    <div style="visibility:hidden" class=" video-margin"><p>test</p></div>
-       
+    <div style="visibility:hidden" class="video-margin"><p>test</p></div>
+
     <div class="video-container">
         <iframe src="https://www.youtube.com/embed/f1rpOZSgsw4" frameborder="0" allowfullscreen></iframe>
     </div>
-    
+
     <div class="content container">
 
         <div class="row">
-            <div class="col-xs-12 col-sm-9">
-                <h2 class="featurette-heading"> About </h2>
-                <p></p>
-            </div>
-        </div>
+            <div class="col-xs-12 col-sm-12">
+                
+                <h2 class="featurette-heading"> 2Real BMX </h2>
+                <hr />
+                <img src="../images/dev_build 2015-05-01 16-13-32-61.bmp" class="img-responsive" id="main-img-left" />
+                <img src="../images/dev_build 2015-05-01 16-14-54-81.bmp" class="img-responsive pull-right" id="main-img-right" />
+                
+                <h2 class="featurette-heading" style="clear:both;">Summary of Project</h2>
+                <p class="lead">
+                    2-Real BMX is a BMX simulation game which uses semi-realistic physics. It turns out that after figuring out how to make a bicycle steer the proper amount at the right time to ensure stability that the physics model created was more suitable for a motorcycle than a bike.
+                </p>
+
+                <input type="checkbox" id="btnControl-img1" />
+                <label for="btnControl-img1">
+                    <img src="../images/dev_build 2015-05-01 16-15-01-76.bmp" class="img-mult img-thumbnail" />
+                </label>
+                <input type="checkbox" id="btnControl-img2" />
+                <label for="btnControl-img2">
+                    <img src="../images/dev_build 2015-05-01 16-15-28-35.bmp" class="img-mult img-thumbnail" />
+                </label>
+                <input type="checkbox" id="btnControl-img3" />
+                <label for="btnControl-img3">
+                    <img src="../images/dev_build 2015-05-01 16-18-22-66.bmp" class="img-mult img-thumbnail" />
+                </label>
+                <input type="checkbox" id="btnControl-img4" />
+                <label for="btnControl-img4">
+                    <img src="../images/dev_build 2015-05-01 16-19-24-02.bmp" class="img-mult img-thumbnail" />
+                </label>
+                <input type="checkbox" id="btnControl-img5" />
+                <label for="btnControl-img5">
+                    <img src="../images/dev_build 2015-05-01 16-20-34-05.bmp" class="img-mult img-thumbnail" />
+                </label>
+
+                <h2 class="featurette-heading" style="clear:both;">How it works</h2>
+                <p class="lead">
+                    The bike uses Unity 5's built in wheel colliders and rigidbody in addition to a physics wrapper which enables the unity wheel colliders to be used with two wheels. By default the built in colliders do not support two wheeled vehicles. A faux gyroscopic force is applied to the bikes rigidbody to maintain stability while at rest and while moving. Depending on the speed of the bike more or less force is applied. When the bike accelerates the handle bars are progressively turned less and the bike begins to leans farther. The BMX bike can perform a few tricks including spinning and flipping as well as a bar spin. Implementing the ability to grind was partially completed using a magnetic force to attract the bike to the rail when the pegs are within a certain distance to the rail. All actions are based on the bikes current state which is determined by how many wheels are currently grounded. After all, It would not make sense to allow the bike to backflip while grounded without first performing at least a bunny hop.
+                </p>
+                <p class="lead">
+                    The bike is controlled using an Xbox controller for which an input handler was creating thereby simplifying the task of accessing button and axis events in code. Keyboard support was also added at the request of play testers as not all play testers had access to an Xbox controller. Using Unity5's input event system the ability to navigate menu its was added simply by setting an initial focus point which was then manipulated using the controllers left joystick.
+                </p>
+                <p class="lead">
+                    All of the ramp models were created by myself using 3ds Max. The palm tree is a unity standard asset and can be found on the asset store by searching "palm tree". The bike model can be found at the link provided in the resources section below.
+                </p>
+                
+                <p class="lead">
+                    In game controls are as follows:
+
+                    <table id="BMXControllerSchema">
+                        <tr>
+                            <td><b>Button</b></td>
+                            <td><b>Action</b></td>
+                        </tr>
+                        <tr>
+                            <td>A</td>
+                            <td>Bunny Hop. Menu submit.</td>
+                        </tr>
+                        <tr>
+                            <td>B</td>
+                            <td>Not Assigned</td>
+                        </tr>
+                        <tr>
+                            <td>X</td>
+                            <td>Bar Spin</td>
+                        </tr>
+                        <tr>
+                            <td>Y</td>
+                            <td>Hold to set spawn. Tap to jump to spawn.</td>
+                        </tr>
+                        <tr>
+                            <td>Left joystick</td>
+                            <td>Steer. Spin and flip (When not grounded)</td>
+                        </tr>
+                        <tr>
+                            <td>Right Joystick</td>
+                            <td>Free look</td>
+                        </tr>
+                        <tr>
+                            <td>Left Bumper</td>
+                            <td>Spin left</td>
+                        </tr>
+                        <tr>
+                            <td>Right Bumper</td>
+                            <td>Spin right</td>
+                        </tr>
+                        <tr>
+                            <td>Left Trigger</td>
+                            <td>Brake</td>
+                        </tr>
+                        <tr>
+                            <td>Right Trigger</td>
+                            <td>Accelerate</td>
+                        </tr>
+                        <tr>
+                            <td>Start</td>
+                            <td>Menu</td>
+                        </tr>
+                    </table>
+                </p>
+
+                <h2 class="featurette-heading">Resources</h2>
+                <a href="http://tf3dm.com/3d-model/bmx-99337.html" class="lead"> BMX bike model resource</a>
+            
+            </div> <!-- END COL -->
+        </div> <!-- END ROW -->
 
         <!-- /END THE FEATURETTES -->
         <!-- FOOTER -->
