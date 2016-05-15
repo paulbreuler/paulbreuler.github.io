@@ -50,3 +50,8 @@ a.navbar-brand {
 .video-margin {
     height: 50px;
 }
+
+    position: relative;
+    z-index: 999;
+    margin-bottom: 10px;
+}
