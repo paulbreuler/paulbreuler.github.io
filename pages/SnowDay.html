@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 
     <link href="../css/content.css" rel="stylesheet">
+    <link href="../css/snowday.css" rel="stylesheet">
 
 </head>
 <body>
@@ -33,16 +34,266 @@
         </div><!-- /.container -->
     </nav><!-- /.navbar -->
 
-    <div class="Jumbotron">
-        <video src=".../video/2RealBMX_Video.mp4"/>
-    </div>
+    <div style="visibility:hidden" class="video-margin"><p>test</p></div>
 
-    <!-- /END THE FEATURETTES -->
-    <!-- FOOTER -->
-    <footer>
-        <p class="pull-right"><a href="#">Back to top</a></p>
-        <p>&copy; 2016 Sudosandwich &middot; <a href="https://www.linkedin.com/in/paulbreuler" target="_blank">Contact</a></p>
-    </footer>
+    <!--
+    <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/f1rpOZSgsw4" frameborder="0" allowfullscreen></iframe>
+    </div>
+        -->
+    <div class="content container">
+
+        <div class="row">
+            <div class="col-xs-12 col-sm-12">
+
+                <h2 class="featurette-heading"> Snow Day </h2>
+                <hr />
+
+                <p>
+                    Snow Day is a multiplayer, class-based, snowball shooter game that has many different game modes including Capture the Flag and Team Deathmatch for both casual and competitive play. Players can incorporate many strategies to achieve victory, including building defenses and utilizing various weapons.
+                </p>
+
+                <div class="row">
+                    <div class="col-md-12">
+                        <a href="../images/snowday/SupaCoolGameplayPoster.png"><img class="img-poster img-thumbnail" src="../images/snowday/SupaCoolGameplayPoster.png" /></a>
+                        <a href="../images/snowday/SupaCoolTechnicalPoster.jpg"><img class="img-poster img-thumbnail" src="../images/snowday/SupaCoolTechnicalPoster.jpg" /></a>
+                    </div>  
+                </div> 
+
+                <h3>Controls (Movement and Weapons)</h3>
+                <h4>Movement</h4>
+                <p>Players have a base movement speed which is modifiable and limited by stamina. To control the character, "WASD" (or the left analog stick, if using a controller) can be used to move around. The mouse or the right analog stick (in the case of a controller) both control where the character is aiming. Movement includes the ability to dodge in left, right, forward, or backward directions based on a simple tap of the "c" key. Dodging reduces a player's stamina by two thirds. Sprinting slowly drains a players stamina to zero. When a player has zero stamina they must move at the base speed until stamina is regained.</p>
+                <h3>Weapons</h3>
+                <p>There are a number of different weapons in the game including the snowball (which every character has), the bazooka, and the sniper rifle.  Every player, on spawn, will have the snowball equipped which can be thrown with any power.  To build power, the left mouse button or the trigger  button on a controller must be held.  The snowball has a maximum power, as indicated on the UI when it is equipped.  Other weapons, like the bazooka and sniper rifle, require a fully-charged power bar before the projectile is launched.  Every weapon also has a "cooldown" period after a projectile has been launched.</p>
+                <p>Weapons can be switched using the keyboard or the controller.  Every character has a snowball, a secondary weapon, and a build tool.  The build tool allows the player to place blocks on the level for defense, and is covered later in this document.</p>
+
+                <p>Certain weapons use a "homing" feature for their projectiles which is indicated by an orange reticle on the UI.  The snowballs follow a curved path in attempting to hit the enemy.  Additionally, if the reticle is orange, a player can lock their reticle onto another player.</p>
+
+                <h3>Multiplayer</h3>
+                <p>Multiplayer occurs over a network so that players can play with and against other people without having to be in the same room.  Players can create and join rooms and specify options such as map, game type, victory condition, and number of AI players.  At the end of each match, every player in that room is returned to a room lobby where the host can decide to play again.  Players are identified by their username selected upon game load.  If a username is not selected, a default name of "Player" is assigned.</p>
+
+                <h3>Game Modes</h3>
+
+                <h4>Capture-The-Flag</h4>
+                <p>Capture the flag pits opposing teams against one another to capture one another’s flag. Player will re-spawn after a short duration when knocked out.</p>
+
+                <h4>Team Death Match</h4>
+                Team death match consists of opposing teams attempting to reach some predefined victory condition. Score will be incremented when one player knocks out another.
+
+                <h4>Domination</h4>
+                Domination requires opposing teams to capture up to three points on a map in order to gain points to win.  A neutral point gives no points to either team; however, when a team takes over a point by physically being on it for a short duration, they will take it over and begin to earn points.  Opposing teams can take points from one another simply by capturing each other's points.
+
+                <h3>Re-spawning</h3>
+                <p>Upon death or being "knocked out," the player's camera switches to a specific death cam for a short duration to indicate that their character has run out of health.  Then, the character respawns at one of the spawn spots in their base and the player can resume their gameplay.</p>
+
+                <h3>Player Health</h3>
+                <p>Player health follows a relatively typical configuration for most multiplayer shooter games; that is, being hit by another player will lower the health of the player that was hit.  When a player's health falls to zero, they will die or be "knocked out."  The only way to regain health during gameplay is to be hit by a healing snowball thrown by a Healer on the same team.</p>
+                <h3>Building Mechanic</h3>
+                <p>Given that the game occurs in areas where there is an abundant amount of snow around, each class will be able to build using the snow in some way.  In general, the characters can use the snow to lay down blocks, which can eventually form things like walls and forts. Blocks can be placed one-by-one, or the player can click and drag to create large structures. Building larger structures will take more time to build, but will offer a greater strategic advantage. To prevent overuse of the building feature, players have a set number of blocks they are able to use. Once they use up these blocks, they must remove old ones to build any more. Some classes will have different methods of building, including the Engineer which can build a snowman in addition to the normal building tool.</p>
+
+                <h3>Classes</h3>
+                <p>Players will have the ability to choose a character class at the beginning of each match.</p>
+
+
+                <div class="row featurette">
+                    <div class="col-md-7 col-md-push-2">
+                        <h4>Fighter</h4>
+                        <p>The fighter is a well-rounded class, which serves as the base player for the game.</p>
+                        <h5>Weapons</h5>
+                        <ul>
+                            <li>Snowball</li>
+                            <li> Bazooka - Large snowball shot out at high speed with a long reload time.</li>
+                        </ul>
+                        <h5>Abilities:</h5>
+                        <ul>
+                            <li>Basic building</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-5 col-md-pull-7">
+                        <img class="level-img img-thumbnail" src="../images/snowday/Fighter.png" />
+                    </div>
+                </div>
+
+
+                <div class="row featurette">
+                    <div class="col-md-7 col-md-push-2">
+
+                        <h4>Sniper</h4>
+                        <p>The sniper focuses on staying further away from the action by using a sniper rifle.</p>
+                        <h5>Weapons</h5>
+                        <ul>
+                            <li>Snowball</li>
+                            <li>Sniper</li>
+                        </ul>
+                        <h5>Abilities:</h5>
+                        <ul>
+                            <li>Basic building</li>
+                        </ul>
+
+                    </div>
+                    <div class="col-md-5 col-md-pull-7">
+
+                        <img class="level-img img-thumbnail" src="../images/snowday/Sniper.png" />
+
+                    </div>
+                </div>
+
+
+
+                <div class="row featurette">
+                    <div class="col-md-7 col-md-push-2">
+
+                        <h4>Engineer</h4>
+                        <p>The engineer can provide support for a team by spawning snowmen turrets that fight for your team.</p>
+                        <h5>Weapons</h5>
+                        <ul>
+                            <li>Snowball</li>
+                            <li>Top hat - Place a top hat to spawn a snowman</li>
+                        </ul>
+                        <h5>Abilities:</h5>
+                        <ul>
+                            <li>Improved building</li>
+                        </ul>
+
+                    </div>
+                    <div class="col-md-5 col-md-pull-7">
+
+                        <img class="level-img img-thumbnail" src="../images/snowday/Engineer.png" />
+
+                    </div>
+                </div>
+
+
+
+                <div class="row featurette">
+                    <div class="col-md-7 col-md-push-2">
+
+                        <h4>Healer</h4>
+                        <p>The healer is also used in a support role to heal teammates when needed.</p>
+                        <h5>Weapons</h5>
+                        <ul>
+                            <li>Snowball</li>
+                            <li>Healing Snowball - Does not damage enemies.</li>
+                        </ul>
+                        <h5>Abilities:</h5>
+                        <ul>
+                            <li>Basic building</li>
+                        </ul>
+
+                    </div>
+                    <div class="col-md-5 col-md-pull-7">
+
+                        <img class="level-img img-thumbnail" src="../images/snowday/Healer.png" />
+
+                    </div>
+                </div>
+
+
+
+                <div class="row featurette">
+                    <div class="col-md-7 col-md-push-2">
+
+                        <h4>Wizard</h4>
+                        <p>The wizard is used in an offense-oriented role due to its powerful triple-snowball attack.</p>
+                        <h5>Weapons</h5>
+                        <ul>
+                            <li>Snowball</li>
+                            <li>Triple-Snowball Attack</li>
+                        </ul>
+                        <h5>Abilities:</h5>
+                        <ul>
+                            <li>Basic building</li>
+                        </ul>
+
+                    </div>
+                    <div class="col-md-5 col-md-pull-7">
+
+                        <img class="level-img img-thumbnail" src="../images/snowday/Wizard.png" />
+
+                    </div>
+                </div>
+
+
+
+                <h3>Levels/Level Design</h3>
+                <p>Levels consist of outdoor, simple areas; some have cover and some do not in order to provide a greater incentive to build.</p>
+
+                <div class="row featurette">
+                    <div class="col-md-7 col-md-push-2">
+                        <h3 class="featurette-heading">Forest</h3>
+                        <p>scene with moderate cover with many to trees and bushes and varying topology.</p>
+
+                    </div>
+                    <div class="col-md-5 col-md-pull-7">
+                        <img class="level-img img-thumbnail" src="../images/snowday/forest.png" />
+                    </div>
+                </div>
+
+                <div class="row featurette">
+                    <div class="col-md-7 col-md-push-2">
+                        <h4>Frozen Valley</h4>
+                        <p> A generally open valley with sparse cover. However, it is difficult to transverse.</p>
+                    </div>
+                    <div class="col-md-5 col-md-pull-7">
+                        <img class="level-img img-thumbnail" src="../images/snowday/FrozenValley.png" />
+                    </div>
+                </div>
+
+                <div class="row featurette">
+                    <div class="col-md-7 col-md-push-2">
+                        <h3 class="featurette-heading">Mountain</h3>
+                        <p>Similar to forest; moderate cover provided due to trees and bushes.</p>
+
+                    </div>
+                    <div class="col-md-5 col-md-pull-7">
+                        <img class="level-img img-thumbnail" src="../images/snowday/Mountain.png" />
+                    </div>
+                </div>
+
+                <div class="row featurette">
+                    <div class="col-md-7 col-md-push-2">
+                        <h3 class="featurette-heading">Neighborhood</h3>
+                        <p>
+                            There are many buildings to hide behind in addition to trees and bushes.  Use the cover well to protect yourself from the enemies!
+                        </p>
+                    </div>
+                    <div class="col-md-5 col-md-pull-7">
+                        <img class="level-img img-thumbnail" src="../images/snowday/neighborhood.png" />
+                    </div>
+                </div>
+
+                <h3>Atmosphere</h3>
+                <p>
+                    The atmosphere is randomly selected at the beginning of every match.  An atmosphere includes the skybox, the scene lighting, the fog color, and precipitation.
+                </p>
+
+                <h3>Artificial Intelligence</h3>
+                <h4>Computer (“Bot”) Players</h4>
+                <p>While the focus of the game will be on multiplayer gameplay, computer players are available as well. These computer players play to their gametype (that is, they try to win even in more complicated modes such as Capture the Flag and Domination).  Additionally, they attempt to intelligently play by hiding behind cover and attacking when needed.</p>
+                <p>Multiple AI players can be added to a game. They will not attack or damage players on their own team.</p>
+
+
+                <div class="row featurette">
+                    <div class="col-md-7 col-md-push-2">
+                        <h3 class="featurette-heading">Snowmen</h3>
+                        <p>Unlike the normal computer players, snowmen will act very differently than human players. They will act as autonomous turrets, meaning they are stationary, and they throw snowballs at enemies as they go by. They can either be created by players.</p>
+
+                    </div>
+                    <div class="col-md-5 col-md-pull-7">
+                        <img class="level-img img-thumbnail" src="../images/snowday/snowman.png" />
+                    </div>
+                </div>
+
+
+
+            </div> <!-- END COL -->
+        </div> <!-- END ROW -->
+        <!-- /END THE FEATURETTES -->
+        <!-- FOOTER -->
+        <footer>
+            <p class="pull-right"><a href="#">Back to top</a></p>
+            <p>&copy; 2016 Sudosandwich &middot; <a href="https://www.linkedin.com/in/paulbreuler" target="_blank">Contact</a></p>
+        </footer>
 
     </div> <!-- End of content contianer-->
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->

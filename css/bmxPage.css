@@ -20,7 +20,7 @@
 
 td {
     font-size: 125%;
-    padding: 15px;
+    padding: 5px;
 }
 
 .img-mult {
@@ -32,8 +32,12 @@ label {
     padding: 0;
 }
 
-.img-mult:active{
+.img-mult:hover{
     background-color: #d1d1d1;
+}
+
+.img-mult:active{
+    background-color: #858585;
 }
 
 #btnControl-img1,
