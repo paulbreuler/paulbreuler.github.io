@@ -23,6 +23,7 @@ a.navbar-brand {
 
 .slides {
     margin: auto;
+    min-height: 335px;
 }
 
 .content {
