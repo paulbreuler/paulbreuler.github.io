@@ -13,6 +13,7 @@
     <link href="../css/content.css" rel="stylesheet">
     <link href="../css/bmxPage.css" rel="stylesheet">
 
+
 </head>
 <body>
     <nav class="navbar navbar-fixed-top navbar-inverse">
@@ -37,7 +38,7 @@
     <div style="visibility:hidden" class="video-margin"><p>test</p></div>
 
     <div class="video-container">
-        <iframe src="https://www.youtube.com/embed/f1rpOZSgsw4" frameborder="0" allowfullscreen></iframe>
+        <iframe id="myVideo" src="https://www.youtube.com/embed/f1rpOZSgsw4?autoplay=1" frameborder="0" allowfullscreen autoplay="1"></iframe>
     </div>
 
     <div class="content container">
@@ -176,5 +177,12 @@ TurnFrontFork(barTurnAmount);
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+    <script>
+        window.onload = function () {
+            var myVideo = iframe.getElementById('myVideo');
+            myVideo.mute();
+        }
+    </script>
 </body>
 </html>
