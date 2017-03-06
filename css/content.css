@@ -18,13 +18,42 @@ a.navbar-brand {
     font-size: .75em;
 }
 
-.navbar-nav a {
+.carousel-caption p {
+    font-size: 20px;
+    line-height: 1.4;
 }
 
-.slides {
-    margin: auto;
-    min-height: 335px;
+.carousel-meta {
+    margin-right: -1em;
+    margin-bottom: 0.75em;
+    margin-left: -2em;
 }
+
+    .carousel-meta.carousel-meta--last {
+        margin-bottom: 0;
+    }
+
+    .carousel-meta li {
+        color: #f8f8f8;
+        display: inline;
+        list-style-type: none;
+        padding-right: 1em;
+        font-size: 0.85em;
+        font-variant: small-caps;
+        letter-spacing: 1px;
+    }
+
+        .carousel-meta li:not(:last-child):after {
+            content: "\25cf";
+            font-style: normal;
+            position: relative;
+            color: rgba(255, 255, 255, 0.25);
+            right: -0.6em;
+        }
+
+        .carousel-meta li > a {
+            color: #f8f8f8;
+        }
 
 .content {
     background-color: white;

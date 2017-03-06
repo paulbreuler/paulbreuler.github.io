@@ -1,5 +1,6 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,143 +9,194 @@
     <title>Paul's Portfolio Page</title>
 
     <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.min.css" />
     <link href="css/content.css" rel="stylesheet">
+    <link href="css/ArticleCard.css" rel="stylesheet">
 
 </head>
+
 <body>
     <nav class="navbar navbar-fixed-top navbar-inverse">
         <div class="container">
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false"
+                    aria-controls="navbar">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#"> <span class="navbar-brand-main">Paul</span> <div class="navbar-brand-sub">Software Developer</div></a>
+                <a class="navbar-brand" href="#"> <span class="navbar-brand-main">Paul</span>
+                    <div class="navbar-brand-sub">Software Developer</div>
+                </a>
             </div>
             <div id="navbar" class="collapse navbar-collapse">
                 <ul class="nav navbar-nav pull-right">
                     <li><a href="https://www.linkedin.com/in/paulbreuler" target="_blank">Contact</a></li>
                 </ul>
-            </div><!-- /.nav-collapse -->
-        </div><!-- /.container -->
-    </nav><!-- /.navbar -->
+            </div>
+            <!-- /.nav-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+    <!-- /.navbar -->
     <!-- Carousel
     ================================================== -->
-    <div id="myCarousel" class="carousel slide" data-ride="carousel">
-        <div class="carousel-inner" role="listbox">
-            <div class="item active">
-                <img class="slides first-slide" src="images/snowday/SnowDayMain.png" alt="First slide">
-                <div class="container">
-                    <div class="carousel-caption">
-                        <h1>Snow Day</h1>
-                        <p>Multiplayer Fantasy FPS</p>
-                        <p><a class="btn btn-lg btn-primary" href="/pages/SnowDay.html" role="button">Learn more</a></p>
+    <div class="container body-content">
+        <!-- Start Container -->
+        <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="6000">
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                    <img src="https://unsplash.it/1140/360/?image=33" alt="test" class="img-responsive" />
+                    <div class="carousel-caption" role="option">
+                        <p>
+                            Fargo Game Jam: Library Defender
+                            <ul class="carousel-meta">
+                                <li><a href="#0"><i class="fa fa-tag"></i> Game Development </a></li>
+                                <li><a href="#0"><i class="fa fa-clock-o"></i> 1 week ago</a></li>
+                            </ul>
+                            <a class="btn btn-default" href="#">
+                        Read More
+                    </a>
+                        </p>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="https://unsplash.it/1140/360/?random" alt="test" class="img-responsive" />
+                    <div class="carousel-caption" role="option">
+                        <p>
+                            Snow Day
+                            <ul class="carousel-meta">
+                                <li><a href="#0"><i class="fa fa-tag"></i> Game Development </a></li>
+                                <li><a href="#0"><i class="fa fa-clock-o"></i> 1 week ago</a></li>
+                            </ul>
+                            <a class="btn btn-default">
+                        Read More
+                    </a>
+                        </p>
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="https://unsplash.it/1140/360/" alt="test" class="img-responsive" />
+                    <div class="carousel-caption" role="option">
+                        <p>
+                            Physics Based BMX
+                            <ul class="carousel-meta">
+                                <li><a href="#0"><i class="fa fa-tag"></i> Hackathon </a></li>
+                                <li><a href="#0"><i class="fa fa-clock-o"></i> 2 weeks ago</a></li>
+                            </ul>
+                            <a class="btn btn-default" href="#">
+                        Read More
+                    </a>
+                        </p>
+                    </div>
+                </div>
+                <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+        <!-- End Carousel -->
+
+        <!-- Start Article Cards -->
+        <div class="wrap">
+
+            <!-- Tile Start -->
+             <a href="pages/LibraryDefender.html">
+            <div class="tile">
+                <img src='https://images.unsplash.com/photo-1464054313797-e27fb58e90a9?dpr=1&auto=format&crop=entropy&fit=crop&w=1500&h=996&q=80'
+                />
+                <div class="text">
+                    <h1>Fargo Game Jam</h1>
+                    <h2 class="animate-text">Library Defender</h2>
+                    <p class="animate-text">Library Defender is a tower defense game developed in Unity3D in which players defend the source of knowledge
+                        against a horde of frost creatures bent on destroying all sources of knowledge.</p>
+                    <div class="dots">
+                        <span></span>
+                        <span></span>
+                        <span></span>
                     </div>
                 </div>
             </div>
-            <div class="item">
-                <img class="slides second-slide" src="images/BMXGame.bmp" alt="Second slide">
-                <div class="container">
-                    <div class="carousel-caption">
-                        <h1>BMX Physics</h1>
-                        <p>Realistic bike physics one week project</p>
-                        <p><a class="btn btn-lg btn-primary" href="/pages/2RealBMX.html" role="button">Learn more</a></p>
-                    </div>
-                </div>
-            </div>
-            <div class="item">
-                <img class="slides second-slide" src="images/libraryDefender/gameScene.jpg" alt="Second slide">
-                <div class="container">
-                    <div class="carousel-caption">
-                        <h1>Library Defender</h1>
-                        <p>Developed at Fargo Game Jam</p>
-                        <p><a class="btn btn-lg btn-primary" href="pages/LibraryDefender.html" role="button">Learn more</a></p>
-                    </div>
-                </div>
-            </div>
-            <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
             </a>
-            <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
+            <!-- Tile End -->
+
+            <!-- Tile Start -->
+             <a href="pages/SnowDay.html">
+            <div class="tile">
+                <img src='https://images.unsplash.com/photo-1458668383970-8ddd3927deed?dpr=1&auto=format&crop=entropy&fit=crop&w=1500&h=1004&q=80'
+                />
+                <div class="text">
+                    <h1>Snow Day</h1>
+                    <h2 class="animate-text">Snow Day</h2>
+                    <p class="animate-text">Snow Day is a class based shooter game that incorporates simple building. Levels are designed using a
+                        low poly art style on which snow blocks can be placed to build defenses that react in a physically
+                        realistic manner.</p>
+                    <div class="dots">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
             </a>
+            <!-- Tile End -->
+
+            <!-- Tile Start -->
+            <a href="pages/2RealBmx.html">
+
+                <div class="tile">
+                    <img src='https://images.unsplash.com/photo-1422393462206-207b0fbd8d6b?dpr=1&auto=format&crop=entropy&fit=crop&w=1500&h=1000&q=80'
+                    />
+                    <div class="text">
+                        <h1>2Real BMX</h1>
+                        <h2 class="animate-text">Physics Based BMX</h2>
+                        <p class="animate-text">Physics based BMX is a one week project in which I sought to develop an algorithm to realistically
+                            animate a bicycle. </p>
+                        <div class="dots">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <!-- Tile Start -->
+
         </div>
-    </div><!-- /.carousel -->
-    <div class="content container">
-        <div class="row">
-            <div class="col-xs-12 col-sm-12">
-                <h2 class="featurette-heading"> About </h2>
-                <p class="lead">I am a software development enthusiast. What does that mean you ask? Well,
-                    that means that I love to write code. I used to be an hardcore gamer, then I
-                    turned my passion for gaming into a passion for developing games as well as other
-                    applications. I enjoy developing software to increase productivity and end user
-                    'happiness' through gamification of applications.</p>
+        <!-- End Article Cards -->
 
-                <p class="lead">If you are interested in my professional work check out my <a href="https://www.linkedin.com/in/paulbreuler" target="_blank">LinkedIn profile</a></p>
-            </div>
-        </div>
 
-        <!-- START THE FEATURETTES -->
 
-        <hr class="featurette-divider">
 
-        <div class="row featurette">
-            <div class="col-md-7 col-md-push-5">
-                <h2 class="featurette-heading">Fargo Game Jam: Library Defender</h2>
-                <p class="lead">Library Defender is a tower defense game developed in Unity3D in which players defend the source of knowledge against a horde of frost creatures bent on destroying all sources of knowledge.</p>
-                <a class="btn btn-primary btn-more pull-right" href="pages/LibraryDefender.html"> Learn More </a>
-            </div>
-            <div class="col-md-5 col-md-pull-7">
-                <a href="pages/LibraryDefender.html"> <img class="featurette-image img-responsive center-block" src="images/libraryDefender/gameScene.jpg" alt="Generic placeholder image"> </a>
-            </div>
-        </div>
 
-        <hr class="featurette-divider">
-
-        <div class="row featurette">
-            <div class="col-md-7">
-                <h2 class="featurette-heading">Snow Day</h2>
-                <p class="lead">Snow Day is a class based shooter game that incorporates simple building. Levels are designed using a low poly art style on which snow blocks can be placed to build defenses that react in a physically realistic manner.</p>
-                <a class="btn btn-primary btn-more" href="pages/SnowDay.html"> Learn More </a>
-            </div>
-            <div class="col-md-5">
-                <a href="pages/SnowDay.html"> <img class="featurette-image img-responsive center-block" src="images/snowday/SnowDayMain.png" alt="Generic placeholder image"> </a>
-            </div>
-        </div>
-
-        <hr class="featurette-divider">
-
-        <div class="row featurette">
-            <div class="col-md-7 col-md-push-5">
-                <h2 class="featurette-heading"> Physics Based BMX <span class="text-muted"></span></h2>
-                <p class="lead"> Physics based BMX is a one week project in which I sought to develop an algorithm to realistically animate a bicycle.<p>
-                    <a class="btn btn-primary btn-more pull-right" href="pages/2RealBMX.html"> Learn More </a>
-            </div>
-            <div class="col-md-5 col-md-pull-7">
-                <a href="pages/2RealBMX.html"> <img class="featurette-image img-responsive center-block" src="images/BMXGame.bmp" alt="Generic placeholder image"> </a>
-                
-            </div>
-        </div>
-
-        <hr class="featurette-divider">
-
-        <!-- /END THE FEATURETTES -->
         <!-- FOOTER -->
-        <footer>
+        <hr />
+        <footer class="">
             <p class="pull-right"><a href="#">Back to top</a></p>
             <p>&copy; 2016 Sudosandwich &middot; <a href="https://www.linkedin.com/in/paulbreuler" target="_blank">Contact</a></p>
         </footer>
 
-    </div> <!-- End of content contianer-->
+    </div>
+    <!--End Container -->
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
+        crossorigin="anonymous"></script>
+    </div>
 </body>
+
 </html>
