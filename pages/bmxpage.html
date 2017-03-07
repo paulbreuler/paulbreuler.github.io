@@ -13,13 +13,14 @@
         crossorigin="anonymous">
 
     <link href="../css/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" />
-    <link href="../css/content.css" rel="stylesheet" />
     <link href="../css/ArticleCard.css" rel="stylesheet" />
     <link href="../css/Carousel.css" rel="stylesheet" />
     <link href="../css/sticky-footer-navbar.css" rel="stylesheet" />
     <link href="../css/navbarIcon.css" rel="stylesheet" type="text/css" />
     <link href="../css/bmxPage.css" rel="stylesheet" />
     <link href="../css/Article.css" rel="stylesheet" />
+    <link href="../css/content.css" rel="stylesheet" />
+
 </head>
 
 <body>
@@ -42,8 +43,6 @@
             </ul>
             <form class="form-inline my-2 my-lg-0">
                 <a href="https://github.com/sudosandwichx"> <i class="fa fa-github-square fa-2x icon-link" aria-hidden="true"> </i></a>
-
-
                 <a href="https://www.linkedin.com/in/paulbreuler"><i class="fa fa-linkedin-square fa-2x icon-link" aria-hidden="true"></i></a>
             </form>
         </div>
@@ -53,19 +52,19 @@
     ================================================== -->
     <!-- Start Container -->
     <div id="myCarousel" class="carousel slide" data-ride="carousel">
-        <ol class="carousel-indicators">
-        </ol>
         <div class="carousel-inner" role="listbox">
             <div class="carousel-item active">
                 <div class="container">
                     <div class="video-container">
                         <iframe src="https://www.youtube.com/embed/f1rpOZSgsw4" frameborder="0" allowfullscreen></iframe>
                     </div>
-
                 </div>
             </div>
         </div>
     </div>
+
+    <div class="video-container video-mobile">
+        <iframe src="https://www.youtube.com/embed/f1rpOZSgsw4" frameborder="0" allowfullscreen></iframe>
     </div>
     <!-- End Carousel -->
 
@@ -74,7 +73,8 @@
             <h2 class="headline"> 2Real BMX </h2>
 
             <img src="../images/dev_build 2015-05-01 16-15-01-76.bmp" class="img-responsive zoom-image" id="main-img-left" />
-            <img src="../images/dev_build 2015-05-01 16-14-54-81.bmp" class="img-responsive pull-right zoom-image" id="main-img-right" />
+            <img src="../images/dev_build 2015-05-01 16-14-54-81.bmp" class="img-responsive pull-right zoom-image" id="main-img-right"
+            />
 
             <h2 class="subheadline" style="clear:both;">Summary of Project</h2>
             <p>
@@ -105,7 +105,7 @@
                 </label>
 
             <h2 class="subheadline" style="clear:both;">How it works</h2>
-            <p >
+            <p>
                 The bike uses Unity 5's built in wheel colliders and rigidbody in addition to a physics wrapper which enables the unity wheel
                 colliders to be used with two wheels. By default the built in colliders do not support two wheeled vehicles.
                 A faux gyroscopic force is applied to the bikes rigidbody to maintain stability while at rest and while moving.
@@ -126,27 +126,27 @@ TurnFrontFork(barTurnAmount);
 
 
             </p>
-            <p >
+            <p>
                 The BMX bike can perform a few tricks including spinning and flipping as well as a bar spin. Implementing the ability to
                 grind was partially completed using a magnetic force to attract the bike to the rail when the pegs are within
                 a certain distance to the rail. All actions are based on the bikes current state which is determined by how
                 many wheels are currently grounded. After all, It would not make sense to allow the bike to backflip while
                 grounded without first performing at least a bunny hop.
             </p>
-            <p >
+            <p>
                 The bike is controlled using an Xbox controller for which an input handler was creating thereby simplifying the task of accessing
                 button and axis events in code. Keyboard support was also added at the request of play testers as not all
                 play testers had access to an Xbox controller. Using Unity5's input event system the ability to navigate
                 menu its was added simply by setting an initial focus point which was then manipulated using the controllers
                 left joystick.
             </p>
-            <p >
+            <p>
                 All of the ramp models were created by myself using 3ds Max. The palm tree is a unity standard asset and can be found on
                 the asset store by searching "palm tree". The bike model can be found at the link provided in the resources
                 section below.
             </p>
 
-            <p >
+            <p>
                 In game controls are as follows:
 
                 <table id="BMXControllerSchema">
@@ -202,7 +202,7 @@ TurnFrontFork(barTurnAmount);
             </p>
 
             <h2 class="subheadline">Resources</h2>
-            <a href="http://tf3dm.com/3d-model/bmx-99337.html" > BMX bike model resource</a>
+            <a href="http://tf3dm.com/3d-model/bmx-99337.html"> BMX bike model resource</a>
 
         </section>
     </article>

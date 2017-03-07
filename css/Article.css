@@ -23,12 +23,6 @@ article .article-header {
 article .article-header2 {
     background-image: url("../images/snowday/SnowDayMain.png");
 }
-article .article-content {
-    width: 950px;
-    background: white;
-    margin: -100px auto;
-    padding: 50px 150px;
-}
 
     article .article-content h2 {
         padding-top: 30px;
@@ -229,4 +223,48 @@ article .character-details h5{
 .img-poster {
     float: left;
     width: 50%;
+}
+
+/* Custom, iPhone Retina */
+@media (min-width : 320px) {
+
+    article .article-content {
+        width: 95%;
+        background: white;
+        margin: -150px auto;
+        padding: 50px 50px;
+    }
+}
+
+/* Extra Small Devices, Phones */
+@media (min-width : 480px) {
+
+
+}
+
+/* Small Devices, Tablets */
+@media (min-width : 768px) {         
+
+    article .article-content {
+        width: 95%;
+        background: white;
+        margin: -150px auto;
+        padding: 50px 100px;
+    }
+
+}
+
+/* Medium Devices, Desktops */
+@media (min-width : 992px) {
+    article .article-content {
+        width: 950px;
+        background: white;
+        margin: -100px auto;
+        padding: 50px 150px;
+    }
+}
+
+/* Large Devices, Wide Screens */
+@media (min-width : 1200px) {
+
 }
