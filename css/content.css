@@ -1,61 +1,61 @@
-body {
-    background-color: #333333;
+.carousel-caption p {
+    font-size: 20px;
+    line-height: 1.4;
 }
 
-.navbar {
-    background-color: #292929;
+.carousel-meta {
+    margin-right: -1em;
+    margin-bottom: 0.75em;
+    margin-left: -2em;
 }
 
-a.navbar-brand {
-    margin-top: -10px;
-}
+    .carousel-meta.carousel-meta--last {
+        margin-bottom: 0;
+    }
 
-.navbar-brand-main {
-    color: yellow;
-}
+    .carousel-meta li {
+        color: #f8f8f8;
+        display: inline;
+        list-style-type: none;
+        padding-right: 1em;
+        font-size: 0.85em;
+        font-variant: small-caps;
+        letter-spacing: 1px;
+    }
 
-.navbar-brand-sub {
-    font-size: .75em;
-}
+        .carousel-meta li:not(:last-child):after {
+            content: "\25cf";
+            font-style: normal;
+            position: relative;
+            color: rgba(255, 255, 255, 0.25);
+            right: -0.6em;
+        }
 
-.navbar-nav a {
-}
-
-.slides {
-    margin: auto;
-    min-height: 300px;
-}
-
-.content {
-    background-color: white;
-}
+        .carousel-meta li > a {
+            color: #f8f8f8;
+        }
 
 .video-container {
     position: relative;
-    padding-bottom: 56.25%;
-    padding-top: 30px;
+    padding-bottom: 46.5%;
     height: 0;
     overflow: hidden;
-          margin-bottom: -12%;
 }
 
-    .video-container iframe {
+    .video-container iframe,
+    .video-container object,
+    .video-container embed {
         position: absolute;
         top: 0;
-        
-        width: 100%;
-        height: 80%;
+        left: 8.75%;
+        width: 82.5%;
+        height: 100%;
     }
 
 .video-margin {
-    height: 50px;
+    height: 55px;
 }
 
-.btn-more {
-    position: relative;
-    z-index: 999;
-    margin-bottom: 10px;
-}
 
 .csharpcode, .csharpcode pre
 {
@@ -94,37 +94,52 @@ a.navbar-brand {
 
 .csharpcode .lnum { color: #606060; }
 
+.zoom-image {
+    position: relative;
+    z-index: 0;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 0;
+    -webkit-transition: all .25s ease-in-out;
+    -moz-transition: all .25s ease-in-out;
+    -ms-transition: all .25s ease-in-out;
+    -o-transition: all .25s ease-in-out;
+    transition: all .25s ease-in-out;
+}
+
+
+    .zoom-image:hover {
+        position: relative;
+        -webkit-transform: scale(1.5);
+        -moz-transform: scale(1.5);
+        -ms-transform: scale(1.5);
+        -o-transform: scale(1.5);
+        transform: scale(1.5);
+        z-index: 999;
+    }
+
+
 /* Custom, iPhone Retina */
 @media only screen and (min-width : 320px) {
-    .btn-more {
-        width: 100%;
-    }
+
 }
 
 /* Extra Small Devices, Phones */
 @media only screen and (min-width : 480px) {
-    .btn-more {
-        width: 100%;
-    }
+
 }
 
 /* Small Devices, Tablets */
 @media only screen and (min-width : 768px) {
-    .btn-more {
-        width: 100px;
-    }
+
 }
 
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px) {
-    .btn-more {
-        width: 100px;
-    }
+
 }
 
 /* Large Devices, Wide Screens */
 @media only screen and (min-width : 1200px) {
-    .btn-more {
-        width: 100px;
-    }
+
 }

@@ -53,5 +53,5 @@ label {
     #btnControl-img3:checked + label,
     #btnControl-img4:checked + label,
     #btnControl-img5:checked + label {
-        width: 100%;
+        width: 98%;
     }

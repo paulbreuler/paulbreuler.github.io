@@ -1,0 +1,232 @@
+﻿@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Bitter|Source+Sans+Pro:400,700|Source+Code+Pro);
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+article {
+    font-family: "Bitter", serif;
+    color: #323232;
+}
+
+article .article-header {
+    width: 100%;
+    height: 66vh;
+    background-image: url("../images/libraryDefender/gameScene.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+article .article-header2 {
+    background-image: url("../images/snowday/SnowDayMain.png");
+}
+article .article-content {
+    width: 950px;
+    background: white;
+    margin: -100px auto;
+    padding: 50px 150px;
+}
+
+    article .article-content h2 {
+        padding-top: 30px;
+        border-top: 1px dotted #a0a0a0;
+        margin-top: 15px;
+    }
+
+    article .article-content .article-meta {
+        margin-bottom: 30px;
+        padding-bottom: 30px;
+        border-bottom: 1px dotted #a0a0a0;
+    }
+
+        article .article-content .article-meta time:after {
+            content: " • ";
+        }
+
+    article .article-content figure figcaption {
+        float: left;
+        width: 100px;
+        font-family: "Source Code Pro", monospace;
+        font-size: 14px;
+        color: #a0a0a0;
+        text-align: right;
+        margin: 20px 0 0 -170px;
+        border-top: 1px dotted #a0a0a0;
+        padding-top: 10px;
+    }
+
+    article .article-content figure img {
+        float: left;
+    }
+
+    article .article-content figure.fig-half img {
+        width: 50%;
+        float: left;
+        margin: 30px 30px 30px -50px;
+    }
+
+    article .article-content .quote-bubble {
+        display: block;
+        float: left;
+    }
+
+        article .article-content .quote-bubble svg {
+            margin: 53px 0 0 -60px;
+        }
+
+    article .article-content blockquote {
+        padding: 30px 0;
+        margin: 30px auto;
+        border-top: 1px dotted #a0a0a0;
+        border-bottom: 1px dotted #a0a0a0;
+    }
+
+article .article-footer {
+    width: 100%;
+    height: 33vh;
+    padding: 30px;
+    text-align: center;
+}
+
+    article .article-footer p {
+        font-family: "Source Sans Pro", sans-serif;
+        font-weight: 700;
+        font-size: 30px;
+        width: 50%;
+        margin: 0 auto 30px;
+        padding-bottom: 30px;
+        border-bottom: 1px dotted #a0a0a0;
+    }
+
+    article .article-footer a {
+        padding-top: 60px;
+        font-family: "Source Code Pro", monospace;
+        font-style: normal;
+    }
+
+.headline {
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 1em;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.subheadline {
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    text-transform: uppercase;
+    margin-top: 30px;
+}
+
+.section-title {
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.article-meta {
+    text-align: center;
+    text-transform: uppercase;
+    color: #a0a0a0;
+}
+
+    .article-meta time:after {
+        content: "  ";
+    }
+
+article p, li, h5 {
+    font-size: 18px;
+    line-height: 1.6em;
+}
+
+footer {
+    margin-top: 50px;
+}
+
+footer a {
+    border-bottom: 1px dotted #a0a0a0;
+    text-decoration: none;
+    color: #323232;
+    font-style: italic;
+}
+
+blockquote {
+    text-align: left;
+    text-transform: uppercase;
+    color: #a0a0a0;
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 400;
+    font-size: 31px;
+    margin: 0;
+}
+
+    blockquote:before {
+        content: "«";
+    }
+
+    blockquote:after {
+        content: "»";
+    }
+
+article .character-card {
+   background-color: #3a4656;
+  height: 320px;
+  width: 100%;
+  border-radius: 5px; 
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  margin-bottom: 30px;
+}
+
+article .character-image img{
+  z-index: 999;
+  padding-top: 20px;
+  padding-left: 20px;
+  position: relative;
+}
+
+article .character-titlebar{
+  width: 650px; 
+  height: 50px;
+  margin-top: -302px;
+  margin-left: 0px;
+  position: absolute; 
+  background-color: #1d232b;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px; 
+}
+
+article .character-title{
+  margin-top: -12px;
+  margin-bottom: 10px;
+  font-size: 2em;
+}
+
+article .character-details{
+  width: 415px; 
+  height: 260px; 
+  position: absolute; 
+  margin-top: -280px; 
+  margin-left: 210px; 
+  color: #efefef;
+}
+
+article .character-details p, ul, li{
+  font-size: 1em;
+}
+
+article .character-details h5{
+  font-size: 1.1em;
+  font-weight: 700;
+}
+
+.img-poster {
+    float: left;
+    width: 50%;
+}
