@@ -121,18 +121,14 @@
 
 /* Custom, iPhone Retina */
 @media (min-width : 320px) {
-    #myCarousel{
+    #myCarousel, #BMXCarousel{
         display: none;
     }
     .video-mobile{
-        margin-bottom: 150px;
+        margin-bottom: 110px;
         z-index: 999;
     }
-    .carousel-item {
-        height: 15rem;
-        background-color: #777;
-    }
-    .video-container {
+    #BMXCarousel .video-container {
         position: relative;
         padding-bottom: 46.5%;
         width: 100%;
@@ -154,7 +150,7 @@
 
 /* Extra Small Devices, Phones */
 @media (min-width : 480px) {
-    .carousel-item {
+    #BMXCarousel .carousel-item {
         height: 18rem;
         background-color: #777;
     }
@@ -173,7 +169,7 @@
         position: absolute;
         top: 0;
         left: 0%;
-        width: 100% ;
+        width: 100%;
         height: 100%;
     }
 
@@ -184,15 +180,32 @@
     #myCarousel{
         display: block;
     }
-    .carousel-item {
-        height: 20rem;
-        background-color: #777;
+
+}
+
+/* Medium Devices, Desktops */
+@media (min-width : 992px) {
+    #BMXCarousel{
+        display: block;
     }
 
     .video-mobile{
         display: none;
         visibility: hidden;
     }
+
+    #BMXCarousel .carousel-item {
+        height: 27rem;
+
+    }
+}
+
+/* Large Devices, Wide Screens */
+@media (min-width : 1200px) {
+    #BMXCarousel .carousel-item {
+        height: 32rem;
+    }
+
     .video-container {
         overflow: hidden;
     }
@@ -202,21 +215,5 @@
     .video-container embed {
         left: 8.75%;
         width: 82.5%;
-    }
-}
-
-/* Medium Devices, Desktops */
-@media (min-width : 992px) {
-    .carousel-item {
-        height: 27rem;
-
-    }
-}
-
-/* Large Devices, Wide Screens */
-@media (min-width : 1200px) {
-    .carousel-item {
-        height: 32rem;
-
     }
 }
