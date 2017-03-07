@@ -8,7 +8,6 @@
 
     <title>Paul's Portfolio Page</title>
 
-    <!-- Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
         crossorigin="anonymous">
     <link rel="stylesheet" href="css/font-awesome-4.7.0/css/font-awesome.min.css" />
@@ -18,32 +17,30 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-fixed-top navbar-inverse">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false"
-                    aria-controls="navbar">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#"> <span class="navbar-brand-main">Paul</span>
-                    <div class="navbar-brand-sub">Software Developer</div>
-                </a>
+                <a href="index.html" class="navbar-brand">Paul Breuler</a>
             </div>
-            <div id="navbar" class="collapse navbar-collapse">
-                <ul class="nav navbar-nav pull-right">
-                    <li><a href="https://www.linkedin.com/in/paulbreuler" target="_blank">Contact</a></li>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="index.html" >Home</a></li>
+                    <li><a href="" >About</a></li>
+                    <li><a href="https://www.linkedin.com/in/paulbreuler" >Contact</a></li>
                 </ul>
             </div>
-            <!-- /.nav-collapse -->
         </div>
-        <!-- /.container -->
-    </nav>
-    <!-- /.navbar -->
+    </nav><!-- /.navbar -->
+
     <!-- Carousel
     ================================================== -->
+    <div class="row"></div>
     <div class="container body-content">
         <!-- Start Container -->
         <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="6000">
@@ -109,12 +106,13 @@
             </div>
         </div>
         <!-- End Carousel -->
+    </div>
+    <!--End Container -->
+    <!-- Start Article Cards -->
+    <div class="wrap">
 
-        <!-- Start Article Cards -->
-        <div class="wrap">
-
-            <!-- Tile Start -->
-             <a href="pages/LibraryDefender.html">
+        <!-- Tile Start -->
+        <a href="pages/LibraryDefender.html">
             <div class="tile">
                 <img src='https://images.unsplash.com/photo-1464054313797-e27fb58e90a9?dpr=1&auto=format&crop=entropy&fit=crop&w=1500&h=996&q=80'
                 />
@@ -130,11 +128,11 @@
                     </div>
                 </div>
             </div>
-            </a>
-            <!-- Tile End -->
+        </a>
+        <!-- Tile End -->
 
-            <!-- Tile Start -->
-             <a href="pages/SnowDay.html">
+        <!-- Tile Start -->
+        <a href="pages/SnowDay.html">
             <div class="tile">
                 <img src='https://images.unsplash.com/photo-1458668383970-8ddd3927deed?dpr=1&auto=format&crop=entropy&fit=crop&w=1500&h=1004&q=80'
                 />
@@ -151,52 +149,51 @@
                     </div>
                 </div>
             </div>
-            </a>
-            <!-- Tile End -->
+        </a>
+        <!-- Tile End -->
 
-            <!-- Tile Start -->
-            <a href="pages/2RealBmx.html">
+        <!-- Tile Start -->
+        <a href="pages/2RealBmx.html">
 
-                <div class="tile">
-                    <img src='https://images.unsplash.com/photo-1422393462206-207b0fbd8d6b?dpr=1&auto=format&crop=entropy&fit=crop&w=1500&h=1000&q=80'
-                    />
-                    <div class="text">
-                        <h1>2Real BMX</h1>
-                        <h2 class="animate-text">Physics Based BMX</h2>
-                        <p class="animate-text">Physics based BMX is a one week project in which I sought to develop an algorithm to realistically
-                            animate a bicycle. </p>
-                        <div class="dots">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                        </div>
+            <div class="tile">
+                <img src='https://images.unsplash.com/photo-1422393462206-207b0fbd8d6b?dpr=1&auto=format&crop=entropy&fit=crop&w=1500&h=1000&q=80'
+                />
+                <div class="text">
+                    <h1>2Real BMX</h1>
+                    <h2 class="animate-text">Physics Based BMX</h2>
+                    <p class="animate-text">Physics based BMX is a one week project in which I sought to develop an algorithm to realistically animate
+                        a bicycle. </p>
+                    <div class="dots">
+                        <span></span>
+                        <span></span>
+                        <span></span>
                     </div>
                 </div>
-            </a>
-            <!-- Tile Start -->
-
-        </div>
-        <!-- End Article Cards -->
-
-
-
-
-
-        <!-- FOOTER -->
-        <hr />
-        <footer class="">
-            <p class="pull-right"><a href="#">Back to top</a></p>
-            <p>&copy; 2016 Sudosandwich &middot; <a href="https://www.linkedin.com/in/paulbreuler" target="_blank">Contact</a></p>
-        </footer>
+            </div>
+        </a>
+        <!-- Tile Start -->
 
     </div>
-    <!--End Container -->
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <!-- End Article Cards -->
+
+
+
+
+
+    <!-- FOOTER -->
+    <hr />
+    <footer class="container">
+        <p class="pull-right"><a href="#">Back to top</a></p>
+        <p>&copy; 2016 Sudosandwich &middot; <a href="https://www.linkedin.com/in/paulbreuler" target="_blank">Contact</a></p>
+    </footer>
+
+
+    </div>
+
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
-        crossorigin="anonymous"></script>
-    </div>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 </body>
 
 </html>
