@@ -10,16 +10,24 @@
     margin-bottom: 10px;
 }
 
-#BMXControllerSchema table {
-    width: 30%;
+th {
+    text-align: center;
 }
 
-#BMXControllerSchema table, th, td {
+th, td {
     border: 1px solid black;
 }
 
+tr {
+    padding: 5px;
+}
+
+    tr:nth-child(even) {
+        background: #efefef;
+    }
+
+
 td {
-    font-size: 125%;
     padding: 5px;
 }
 
@@ -32,11 +40,11 @@ label {
     padding: 0;
 }
 
-.img-mult:hover{
+.img-mult:hover {
     background-color: #d1d1d1;
 }
 
-.img-mult:active{
+.img-mult:active {
     background-color: #858585;
 }
 
