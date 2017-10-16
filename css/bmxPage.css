@@ -18,18 +18,13 @@ th, td {
     border: 1px solid black;
 }
 
-tr {
+tr, td, th {
     padding: 5px;
 }
 
     tr:nth-child(even) {
         background: #efefef;
     }
-
-
-td {
-    padding: 5px;
-}
 
 .img-mult {
     float: left;
