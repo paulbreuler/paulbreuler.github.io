@@ -19,16 +19,22 @@
 # in the templates via {{ site.myvariable }}.
 
 title: Paul Breuler
-description: >- # this means to ignore newlines until "baseurl:"
-Automated Lifecycle Management (ALM) for the Microsoft Power Platform expert | Educator | Software Engineer -- Full-stack & .Net 
+description: >-
+  Automated Lifecycle Management (ALM) for the Microsoft Power Platform expert,
+  educator, and full‑stack software engineer.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://paulbreuler.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
-github_username:  paulbreuler
+url: "https://paulbreuler.github.io" # the base hostname & protocol for your site
+github_username: paulbreuler
+
+# Personalization
+minimal_mistakes_skin: "air"
+paginate: 5
 
 # Build settings
 theme: minimal-mistakes-jekyll
 plugins:
   - jekyll-feed
+  - jekyll-sitemap
 
 # Exclude from processing.
 # The following items will not be processed, by default.
