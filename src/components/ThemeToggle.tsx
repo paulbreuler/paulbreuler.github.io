@@ -57,21 +57,7 @@ export default function ThemeToggle() {
 		>
 			<span className="theme-toggle-track">
 				<span className={`theme-toggle-thumb ${theme === 'dark' ? 'theme-toggle-thumb-dark' : ''}`}>
-					{theme === 'light' ? (
-						<svg
-							className="moon-icon"
-							width="16"
-							height="16"
-							viewBox="0 0 24 24"
-							fill="none"
-							stroke="currentColor"
-							strokeWidth="2"
-							strokeLinecap="round"
-							strokeLinejoin="round"
-						>
-							<path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
-						</svg>
-					) : (
+					{theme === 'dark' ? (
 						<svg
 							className="sun-icon"
 							width="16"
@@ -92,6 +78,20 @@ export default function ThemeToggle() {
 							<line x1="21" y1="12" x2="23" y2="12" />
 							<line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
 							<line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
+						</svg>
+					) : (
+						<svg
+							className="moon-icon"
+							width="16"
+							height="16"
+							viewBox="0 0 24 24"
+							fill="none"
+							stroke="currentColor"
+							strokeWidth="2"
+							strokeLinecap="round"
+							strokeLinejoin="round"
+						>
+							<path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
 						</svg>
 					)}
 				</span>
