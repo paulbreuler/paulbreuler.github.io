@@ -5,24 +5,32 @@
  */
 
 :root {
-	/* Color Tokens - Primary Palette */
-	--accent: #2337ff;
-	--accent-dark: #000d8a;
-	--black: 15, 18, 25;
-	--gray: 96, 115, 159;
-	--gray-light: 229, 233, 240;
-	--gray-dark: 34, 41, 57;
-	--white: #fff;
+	/* Base Color Palette (theme-independent) */
+	--color-accent-light: #2337ff;
+	--color-accent-dark: #000d8a;
+	--color-black-rgb: 15, 18, 25;
+	--color-gray-rgb: 96, 115, 159;
+	--color-gray-light-rgb: 229, 233, 240;
+	--color-gray-dark-rgb: 34, 41, 57;
+	--color-white: #fff;
+	--color-white-rgb: 255, 255, 255;
+
+	/* Light Theme (default) */
+	--accent: var(--color-accent-light);
+	--accent-dark: var(--color-accent-dark);
+	--black: var(--color-black-rgb);
+	--gray: var(--color-gray-rgb);
+	--gray-light: var(--color-gray-light-rgb);
+	--gray-dark: var(--color-gray-dark-rgb);
+	--white: var(--color-white);
 
 	/* Background Tokens */
+	--gray-gradient: rgba(var(--gray-light), 50%), var(--color-white);
 	--bg-body: linear-gradient(var(--gray-gradient)) no-repeat;
 	--bg-body-size: 100% 600px;
-	--bg-header: white;
+	--bg-header: var(--color-white);
 	--bg-footer: linear-gradient(var(--gray-gradient)) no-repeat;
 	--bg-code: rgb(var(--gray-light));
-
-	/* Gradient Tokens */
-	--gray-gradient: rgba(var(--gray-light), 50%), #fff;
 
 	/* Shadow Tokens */
 	--box-shadow:
@@ -110,6 +118,46 @@
 
 	/* Breakpoints (for reference in media queries) */
 	--breakpoint-mobile: 720px;
+}
+
+/* Dark Theme */
+[data-theme="dark"] {
+	/* Dark theme color overrides */
+	--color-slate-950: 2, 6, 23;
+	--color-slate-900: 15, 23, 42;
+	--color-slate-800: 30, 41, 59;
+	--color-slate-700: 51, 65, 85;
+	--color-slate-400: 148, 163, 184;
+	--color-slate-300: 203, 213, 225;
+	--color-slate-200: 226, 232, 240;
+	--color-slate-100: 241, 245, 249;
+	--color-indigo-400: 129, 140, 248;
+	--color-indigo-500: 99, 102, 241;
+
+	/* Reassign semantic tokens for dark mode */
+	--accent: #818cf8;
+	--accent-dark: var(--color-indigo-500);
+	--black: var(--color-slate-100);
+	--gray: var(--color-slate-400);
+	--gray-light: var(--color-slate-800);
+	--gray-dark: var(--color-slate-200);
+	--white: rgb(var(--color-slate-950));
+
+	/* Dark mode backgrounds */
+	--gray-gradient: rgba(var(--color-slate-900), 50%), rgb(var(--color-slate-950));
+	--bg-body: linear-gradient(var(--gray-gradient)) no-repeat;
+	--bg-header: rgb(var(--color-slate-900));
+	--bg-footer: linear-gradient(var(--gray-gradient)) no-repeat;
+	--bg-code: rgb(var(--color-slate-800));
+
+	/* Dark mode shadows */
+	--box-shadow:
+		0 2px 6px rgba(0, 0, 0, 40%), 0 8px 24px rgba(0, 0, 0, 50%), 0 16px 32px
+		rgba(0, 0, 0, 50%);
+	--header-shadow: 0 2px 8px rgba(0, 0, 0, 30%);
+
+	/* Dark mode borders */
+	--border-color-hr: rgb(var(--color-slate-700));
 }
 @font-face {
 	font-family: "Atkinson";
