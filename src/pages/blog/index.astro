@@ -18,37 +18,37 @@ const posts = (await getCollection('blog')).sort(
 		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
 		<style>
 			main {
-				width: 960px;
+				width: var(--width-blog-index);
 			}
 			ul {
 				display: flex;
 				flex-wrap: wrap;
-				gap: 2rem;
+				gap: var(--gap-blog-grid);
 				list-style-type: none;
 				margin: 0;
 				padding: 0;
 			}
 			ul li {
-				width: calc(50% - 1rem);
+				width: var(--width-blog-card);
 			}
 			ul li * {
 				text-decoration: none;
-				transition: 0.2s ease;
+				transition: var(--transition-fast);
 			}
 			ul li:first-child {
-				width: 100%;
-				margin-bottom: 1rem;
+				width: var(--width-blog-featured);
+				margin: var(--margin-blog-featured);
 				text-align: center;
 			}
 			ul li:first-child img {
-				width: 100%;
+				width: var(--width-blog-featured);
 			}
 			ul li:first-child .title {
-				font-size: 2.369rem;
+				font-size: var(--font-size-blog-featured);
 			}
 			ul li img {
-				margin-bottom: 0.5rem;
-				border-radius: 12px;
+				margin: var(--margin-blog-image);
+				border-radius: var(--border-radius-lg);
 			}
 			ul li a {
 				display: block;
@@ -56,7 +56,7 @@ const posts = (await getCollection('blog')).sort(
 			.title {
 				margin: 0;
 				color: rgb(var(--black));
-				line-height: 1;
+				line-height: var(--line-height-tight);
 			}
 			.date {
 				margin: 0;
@@ -71,17 +71,17 @@ const posts = (await getCollection('blog')).sort(
 			}
 			@media (max-width: 720px) {
 				ul {
-					gap: 0.5em;
+					gap: var(--gap-blog-grid-mobile);
 				}
 				ul li {
-					width: 100%;
+					width: var(--width-blog-card-mobile);
 					text-align: center;
 				}
 				ul li:first-child {
 					margin-bottom: 0;
 				}
 				ul li:first-child .title {
-					font-size: 1.563em;
+					font-size: var(--font-size-blog-featured-mobile);
 				}
 			}
 		</style>
