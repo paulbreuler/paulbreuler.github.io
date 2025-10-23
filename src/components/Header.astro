@@ -48,13 +48,13 @@ import ThemeToggle from './ThemeToggle';
 </header>
 <style>
 	header {
-		margin: 0;
+		margin: var(--margin-none);
 		padding: var(--padding-header);
 		background: var(--bg-header);
 		box-shadow: var(--header-shadow);
 	}
 	h2 {
-		margin: 0;
+		margin: var(--margin-none);
 		font-size: var(--font-size-header-title);
 	}
 
@@ -80,7 +80,7 @@ import ThemeToggle from './ThemeToggle';
 	.nav-actions {
 		display: flex;
 		align-items: center;
-		gap: 1em;
+		gap: var(--gap-nav-actions);
 	}
 	.social-links,
 	.social-links a {
@@ -95,10 +95,10 @@ import ThemeToggle from './ThemeToggle';
 
 <style is:global>
 	.theme-toggle {
-		background: none;
-		border: none;
+		background: var(--border-none);
+		border: var(--border-none);
 		cursor: pointer;
-		padding: 0.5em;
+		padding: var(--padding-theme-toggle);
 		display: flex;
 		align-items: center;
 		justify-content: center;
@@ -109,16 +109,16 @@ import ThemeToggle from './ThemeToggle';
 
 	.theme-toggle:hover {
 		color: var(--accent);
-		background: rgba(var(--gray-light), 30%);
+		background: rgba(var(--gray-light), var(--opacity-hover-bg));
 	}
 
 	.theme-toggle:focus-visible {
-		outline: 2px solid var(--accent);
-		outline-offset: 2px;
+		outline: var(--outline-width) solid var(--accent);
+		outline-offset: var(--outline-offset);
 	}
 
 	.theme-toggle svg {
-		width: 24px;
-		height: 24px;
+		width: var(--size-icon-sm);
+		height: var(--size-icon-sm);
 	}
 </style>

@@ -25,6 +25,7 @@
 	--white: var(--color-white);
 
 	/* Background Tokens */
+	--bg-base: var(--color-white);
 	--gray-gradient: rgba(var(--gray-light), 50%), var(--color-white);
 	--bg-body: linear-gradient(var(--gray-gradient)) no-repeat;
 	--bg-body-size: 100% 600px;
@@ -61,8 +62,14 @@
 	/* Typography Tokens - Font Weights */
 	--font-weight-normal: 400;
 	--font-weight-bold: 700;
+	--font-weight-bolder: bolder;
+
+	/* Typography Tokens - Font Family */
+	--font-family-base: "Atkinson", sans-serif;
 
 	/* Spacing Tokens - Padding */
+	--padding-none: 0;
+	--padding-theme-toggle: 0.5em;
 	--padding-main: 3em 1em;
 	--padding-main-mobile: 1em;
 	--padding-header: 0 1em;
@@ -75,6 +82,8 @@
 	--padding-title: 1em 0;
 
 	/* Spacing Tokens - Margins */
+	--margin-none: 0;
+	--margin-auto: auto;
 	--margin-heading: 0 0 0.5rem 0;
 	--margin-paragraph: 0 0 1em 0;
 	--margin-prose-paragraph: 0 0 2em 0;
@@ -87,11 +96,13 @@
 	--margin-social-links: 1em 0 0 0;
 
 	/* Spacing Tokens - Gaps */
+	--gap-nav-actions: 1em;
 	--gap-blog-grid: 2rem;
 	--gap-blog-grid-mobile: 0.5em;
 	--gap-social-links: 1em;
 
 	/* Layout Tokens - Widths */
+	--width-full: 100%;
 	--width-main: 720px;
 	--width-main-max: calc(100% - 2em);
 	--width-blog-index: 960px;
@@ -103,7 +114,16 @@
 	--width-blog-featured: 100%;
 	--width-hero-image: 100%;
 
+	/* Layout Tokens - Heights */
+	--height-auto: auto;
+	--height-sr-only: 1px;
+
+	/* Layout Tokens - Sizes (for icons, etc.) */
+	--size-icon-sm: 24px;
+	--size-icon-md: 32px;
+
 	/* Border Tokens */
+	--border-none: none;
 	--border-radius-sm: 2px;
 	--border-radius-md: 8px;
 	--border-radius-lg: 12px;
@@ -112,6 +132,13 @@
 	--border-width-hr: 1px;
 	--border-color-transparent: transparent;
 	--border-color-hr: rgb(var(--gray-light));
+
+	/* Outline Tokens */
+	--outline-width: 2px;
+	--outline-offset: 2px;
+
+	/* Opacity Tokens */
+	--opacity-hover-bg: 30%;
 
 	/* Transition Tokens */
 	--transition-fast: 0.2s ease;
@@ -144,6 +171,7 @@
 	--white: rgb(var(--color-slate-950));
 
 	/* Dark mode backgrounds */
+	--bg-base: rgb(var(--color-slate-950));
 	--gray-gradient: rgba(var(--color-slate-900), 50%), rgb(var(--color-slate-950));
 	--bg-body: linear-gradient(var(--gray-gradient)) no-repeat;
 	--bg-header: rgb(var(--color-slate-900));
@@ -174,11 +202,12 @@
 	font-display: swap;
 }
 body {
-	font-family: "Atkinson", sans-serif;
-	margin: 0;
-	padding: 0;
+	font-family: var(--font-family-base);
+	margin: var(--margin-none);
+	padding: var(--padding-none);
 	text-align: left;
-	background: var(--bg-body);
+	background-color: var(--bg-base);
+	background-image: var(--bg-body);
 	background-size: var(--bg-body-size);
 	word-wrap: break-word;
 	overflow-wrap: break-word;
@@ -189,7 +218,7 @@ body {
 main {
 	width: var(--width-main);
 	max-width: var(--width-main-max);
-	margin: auto;
+	margin: var(--margin-auto);
 	padding: var(--padding-main);
 }
 h1,
@@ -234,18 +263,18 @@ p {
 	margin: var(--margin-prose-paragraph);
 }
 textarea {
-	width: 100%;
+	width: var(--width-full);
 	font-size: var(--font-size-input);
 }
 input {
 	font-size: var(--font-size-input);
 }
 table {
-	width: 100%;
+	width: var(--width-full);
 }
 img {
-	max-width: 100%;
-	height: auto;
+	max-width: var(--width-full);
+	height: var(--height-auto);
 	border-radius: var(--border-radius-md);
 }
 code {
@@ -267,7 +296,7 @@ blockquote {
 	font-size: var(--font-size-blockquote);
 }
 hr {
-	border: none;
+	border: var(--border-none);
 	border-top: var(--border-width-hr) solid var(--border-color-hr);
 }
 @media (max-width: 720px) {
@@ -280,12 +309,12 @@ hr {
 }
 
 .sr-only {
-	border: 0;
-	padding: 0;
-	margin: 0;
+	border: var(--padding-none);
+	padding: var(--padding-none);
+	margin: var(--margin-none);
 	position: absolute !important;
-	height: 1px;
-	width: 1px;
+	height: var(--height-sr-only);
+	width: var(--height-sr-only);
 	overflow: hidden;
 	/* IE6, IE7 - a 0 height clip, off to the bottom right of the visible 1px box */
 	clip: rect(1px 1px 1px 1px);

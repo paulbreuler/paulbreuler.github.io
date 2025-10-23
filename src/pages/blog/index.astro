@@ -25,8 +25,8 @@ const posts = (await getCollection('blog')).sort(
 				flex-wrap: wrap;
 				gap: var(--gap-blog-grid);
 				list-style-type: none;
-				margin: 0;
-				padding: 0;
+				margin: var(--margin-none);
+				padding: var(--padding-none);
 			}
 			ul li {
 				width: var(--width-blog-card);
@@ -54,12 +54,12 @@ const posts = (await getCollection('blog')).sort(
 				display: block;
 			}
 			.title {
-				margin: 0;
+				margin: var(--margin-none);
 				color: rgb(var(--black));
 				line-height: var(--line-height-tight);
 			}
 			.date {
-				margin: 0;
+				margin: var(--margin-none);
 				color: rgb(var(--gray));
 			}
 			ul li a:hover h4,
@@ -78,7 +78,7 @@ const posts = (await getCollection('blog')).sort(
 					text-align: center;
 				}
 				ul li:first-child {
-					margin-bottom: 0;
+					margin-bottom: var(--margin-none);
 				}
 				ul li:first-child .title {
 					font-size: var(--font-size-blog-featured-mobile);

@@ -17,22 +17,22 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 		<style>
 			main {
 				width: var(--width-blog-post);
-				max-width: 100%;
-				margin: 0;
+				max-width: var(--width-full);
+				margin: var(--margin-none);
 			}
 			.hero-image {
 				width: var(--width-hero-image);
 			}
 			.hero-image img {
 				display: block;
-				margin: 0 auto;
+				margin: var(--margin-none) var(--margin-auto);
 				border-radius: var(--border-radius-lg);
 				box-shadow: var(--box-shadow);
 			}
 			.prose {
 				width: var(--width-prose);
 				max-width: var(--width-prose-max);
-				margin: auto;
+				margin: var(--margin-auto);
 				padding: var(--padding-prose);
 				color: rgb(var(--gray-dark));
 			}
