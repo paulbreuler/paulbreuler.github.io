@@ -164,78 +164,77 @@ import ThemeToggle from './ThemeToggle';
 </style>
 
 <style is:global>
-	.theme-toggle {
+	.theme-toggle-switch {
 		position: relative;
-		display: flex;
-		align-items: center;
-		gap: 0.5rem;
-		padding: 0.5rem 0.75rem;
-		background: rgba(var(--gray-light), 0.1);
-		border: 1px solid rgba(var(--gray), 0.2);
-		border-radius: 2rem;
+		display: inline-block;
+		width: 52px;
+		height: 28px;
+		background: none;
+		border: none;
 		cursor: pointer;
-		color: rgb(var(--gray-dark));
-		font-size: 0.875rem;
-		font-weight: 500;
-		transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-		overflow: hidden;
+		padding: 0;
 	}
 
-	.theme-toggle:hover {
-		color: var(--accent);
+	.theme-toggle-track {
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background: rgba(var(--gray-light), 0.2);
+		border: 1px solid rgba(var(--gray), 0.2);
+		border-radius: 14px;
+		transition: background-color 0.3s ease, border-color 0.3s ease;
 	}
 
-	.theme-toggle:active {
-		color: var(--accent);
+	.theme-toggle-switch:hover .theme-toggle-track {
+		border-color: var(--accent);
 	}
 
-	.theme-toggle:focus-visible {
+	.theme-toggle-switch:focus-visible {
 		outline: var(--outline-width) solid var(--accent);
 		outline-offset: var(--outline-offset);
+		border-radius: 14px;
 	}
 
-	.theme-toggle-icon {
+	.theme-toggle-thumb {
+		position: absolute;
+		top: 2px;
+		left: 2px;
+		width: 22px;
+		height: 22px;
+		background: rgb(var(--gray-dark));
+		border-radius: 50%;
+		transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), background-color 0.3s ease;
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		width: 20px;
-		height: 20px;
-		position: relative;
+		color: var(--bg-header);
 	}
 
-	.theme-toggle-icon svg {
-		width: 20px;
-		height: 20px;
-		animation: iconFadeIn 0.3s ease-in-out;
+	.theme-toggle-thumb-dark {
+		transform: translateX(24px);
 	}
 
-	.moon-icon {
-		animation: iconRotateIn 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+	.theme-toggle-switch:hover .theme-toggle-thumb {
+		background: var(--accent);
 	}
 
+	.theme-toggle-thumb svg {
+		width: 16px;
+		height: 16px;
+		stroke: currentColor;
+	}
+
+	.moon-icon,
 	.sun-icon {
-		animation: iconRotateIn 0.5s cubic-bezier(0.4, 0, 0.2, 1);
-	}
-
-	.theme-toggle-label {
-		font-family: var(--font-family-base);
-		letter-spacing: 0.025em;
-		user-select: none;
-	}
-
-	@keyframes iconFadeIn {
-		from {
-			opacity: 0;
-		}
-		to {
-			opacity: 1;
-		}
+		animation: iconRotateIn 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 	}
 
 	@keyframes iconRotateIn {
 		from {
 			opacity: 0;
-			transform: rotate(-90deg) scale(0.8);
+			transform: rotate(-180deg) scale(0.5);
 		}
 		to {
 			opacity: 1;
@@ -244,13 +243,23 @@ import ThemeToggle from './ThemeToggle';
 	}
 
 	@media (max-width: 720px) {
-		.theme-toggle-label {
-			display: none;
+		.theme-toggle-switch {
+			width: 48px;
+			height: 26px;
 		}
 
-		.theme-toggle {
-			padding: 0.5rem;
-			min-width: 2.5rem;
+		.theme-toggle-thumb {
+			width: 20px;
+			height: 20px;
+		}
+
+		.theme-toggle-thumb-dark {
+			transform: translateX(22px);
+		}
+
+		.theme-toggle-thumb svg {
+			width: 14px;
+			height: 14px;
 		}
 	}
 </style>
