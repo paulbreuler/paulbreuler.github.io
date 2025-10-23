@@ -95,21 +95,32 @@ import ThemeToggle from './ThemeToggle';
 
 <style is:global>
 	.theme-toggle {
-		background: var(--border-none);
-		border: var(--border-none);
-		cursor: pointer;
-		padding: var(--padding-theme-toggle);
+		position: relative;
 		display: flex;
 		align-items: center;
-		justify-content: center;
+		gap: 0.5rem;
+		padding: 0.5rem 0.75rem;
+		background: rgba(var(--gray-light), 0.1);
+		border: 1px solid rgba(var(--gray), 0.2);
+		border-radius: 2rem;
+		cursor: pointer;
 		color: rgb(var(--gray-dark));
-		transition: var(--transition-fast);
-		border-radius: var(--border-radius-md);
+		font-size: 0.875rem;
+		font-weight: 500;
+		transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+		overflow: hidden;
 	}
 
 	.theme-toggle:hover {
+		background: rgba(var(--gray-light), 0.2);
+		border-color: var(--accent);
 		color: var(--accent);
-		background: rgba(var(--gray-light), var(--opacity-hover-bg));
+		transform: translateY(-1px);
+		box-shadow: 0 4px 12px rgba(var(--gray), 0.15);
+	}
+
+	.theme-toggle:active {
+		transform: translateY(0);
 	}
 
 	.theme-toggle:focus-visible {
@@ -117,8 +128,63 @@ import ThemeToggle from './ThemeToggle';
 		outline-offset: var(--outline-offset);
 	}
 
-	.theme-toggle svg {
-		width: var(--size-icon-sm);
-		height: var(--size-icon-sm);
+	.theme-toggle-icon {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 20px;
+		height: 20px;
+		position: relative;
+	}
+
+	.theme-toggle-icon svg {
+		width: 20px;
+		height: 20px;
+		animation: iconFadeIn 0.3s ease-in-out;
+	}
+
+	.moon-icon {
+		animation: iconRotateIn 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+	}
+
+	.sun-icon {
+		animation: iconRotateIn 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+	}
+
+	.theme-toggle-label {
+		font-family: var(--font-family-base);
+		letter-spacing: 0.025em;
+		user-select: none;
+	}
+
+	@keyframes iconFadeIn {
+		from {
+			opacity: 0;
+		}
+		to {
+			opacity: 1;
+		}
+	}
+
+	@keyframes iconRotateIn {
+		from {
+			opacity: 0;
+			transform: rotate(-90deg) scale(0.8);
+		}
+		to {
+			opacity: 1;
+			transform: rotate(0deg) scale(1);
+		}
+	}
+
+	@media (max-width: 720px) {
+		.theme-toggle-label {
+			display: none;
+		}
+
+		.theme-toggle {
+			padding: 0.5rem;
+			min-width: 2.5rem;
+		}
 	}
 </style>
