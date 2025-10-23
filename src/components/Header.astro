@@ -83,19 +83,18 @@ import ThemeToggle from './ThemeToggle';
 		position: relative;
 		padding: 0.5rem 0.75rem;
 		border-radius: var(--border-radius-md);
-		transition: all var(--transition-smooth);
+		transition: color var(--transition-smooth);
 		border-bottom: var(--border-width-active) solid var(--border-color-transparent);
 	}
 
 	.internal-links a:hover {
 		color: var(--accent);
-		background: rgba(var(--gray-light), var(--opacity-hover-bg));
-		transform: translateY(-2px);
 	}
 
 	.internal-links a.active {
 		font-weight: var(--font-weight-bolder);
 		border-bottom-color: var(--accent);
+		border-radius: 0;
 	}
 
 	.internal-links a:focus-visible {
@@ -121,15 +120,13 @@ import ThemeToggle from './ThemeToggle';
 		justify-content: center;
 		padding: 0.5rem;
 		color: rgb(var(--gray-dark));
-		transition: var(--transition-fast);
+		transition: color var(--transition-smooth);
 		border-radius: var(--border-radius-md);
 		border-bottom: none;
 	}
 
 	.social-links a:hover {
 		color: var(--accent);
-		background: rgba(var(--gray-light), var(--opacity-hover-bg));
-		transform: translateY(-2px);
 	}
 
 	.social-links a:focus-visible {
@@ -185,15 +182,11 @@ import ThemeToggle from './ThemeToggle';
 	}
 
 	.theme-toggle:hover {
-		background: rgba(var(--gray-light), 0.2);
-		border-color: var(--accent);
 		color: var(--accent);
-		transform: translateY(-1px);
-		box-shadow: 0 4px 12px rgba(var(--gray), 0.15);
 	}
 
 	.theme-toggle:active {
-		transform: translateY(0);
+		color: var(--accent);
 	}
 
 	.theme-toggle:focus-visible {
